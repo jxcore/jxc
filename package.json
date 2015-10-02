@@ -1,0 +1,28 @@
+{
+  "name": "jxc",
+  "version": "1.0.0",
+  "description": "JXcore-cordova plugin helper",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ktrzeciaknubisa/jxc.git"
+  },
+  "keywords": [
+    "jxcore",
+    "cordova",
+    "plugin"
+  ],
+  "bin": {
+    "jxvc": "bin/jxc.bin.js"
+  },
+  "author": "Krzysztof Trzeciak, Nubisa Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ktrzeciaknubisa/jxc/issues"
+  },
+  "homepage": "https://github.com/ktrzeciaknubisa/jxc#readme",
+  "dependencies": {
+    "jxtools": "git+https://github.com/ktrzeciaknubisa/jxtools.git"
+  }
+}
