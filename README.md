@@ -29,7 +29,7 @@ This command makes the [jxcore-cordova](https://github.com/jxcore/jxcore-cordova
 You may also install the plugin and use a sample from its [sample](https://github.com/jxcore/jxcore-cordova/tree/master/sample) folder:
 
 ```bash
-$ jx install --sample express_perf
+$ jxc install --sample express_perf
 $ cordova run
 ```
 
@@ -38,5 +38,5 @@ $ cordova run
 Once you have the plugin installed, you may want only to switch te sample:
 
 ```bash
-$ jxv sample express_perf
+$ jxc sample express_perf
 ```
