@@ -6,13 +6,17 @@ This is a helper module for installing [jxcore-cordova](https://github.com/jxcor
 
 The best is to install the module globally. This way you may benefit from global `jxc` command.
 
-> jx install -g ktrzeciaknubisa/jxc
+```bash
+$ jx install -g ktrzeciaknubisa/jxc
+```
 
 # Usage
 
 Go into your cordova application folder and type:
 
-> jxc install
+```bash
+$ jxc install
+```
 
 This command makes the [jxcore-cordova](https://github.com/jxcore/jxcore-cordova) plugin:
 
@@ -24,12 +28,15 @@ This command makes the [jxcore-cordova](https://github.com/jxcore/jxcore-cordova
 
 You may also install the plugin and use a sample from its [sample](https://github.com/jxcore/jxcore-cordova/tree/master/sample) folder:
 
-> jx install --sample express_perf
-> cordova run
+```bash
+$ jx install --sample express_perf
+$ cordova run
+```
 
 # Switch sample
 
 Once you have the plugin installed, you may want only to switch te sample:
 
-> jxv sample express_perf
-
+```bash
+$ jxv sample express_perf
+```
