@@ -14,7 +14,7 @@
     "plugin"
   ],
   "bin": {
-    "jxvc": "bin/jxc.bin.js"
+    "jxc": "bin/jxc.bin.js"
   },
   "author": "Krzysztof Trzeciak, Nubisa Inc.",
   "license": "MIT",
