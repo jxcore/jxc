@@ -35,7 +35,7 @@ $ cordova run
 
 # Switch sample
 
-Once you have the plugin installed, you may want only to switch te sample:
+Once you have the plugin installed, you may want only to switch the sample:
 
 ```bash
 $ jxc sample express_perf
