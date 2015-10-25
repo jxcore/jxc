@@ -3,6 +3,8 @@
 // Copyright & License details are available under JXCORE_LICENSE file
 
 var jxtools = require('jxtools');
+var fs = require('fs');
+var path = require('path');
 
 if (jxtools.onlyForJXcore())
   return;
@@ -15,11 +17,13 @@ if (process.argv.length <= 2) {
 
 var argv2 = process.argv[2].replace("--", "");
 
-if (argv2 === "install") {
-  require("../lib/commands/install.js").run();
+var files = fs.readdirSync(path.join(__dirname,  '../lib/commands'));
+if (files.indexOf(argv2 + '.js') === -1) {
+  jxcore.utils.console.error('Unknown command', argv2);
+  process.exit(-1);
 }
 
-
-if (argv2 === "sample") {
-  require("../lib/commands/sample.js").run();
-}
+require(path.join('../lib/commands', argv2 + '.js')).run(function(err) {
+  if (err)
+    jxcore.utils.console.error(err);
+});
