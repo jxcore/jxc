@@ -23,7 +23,9 @@ if (files.indexOf(argv2 + '.js') === -1) {
   process.exit(-1);
 }
 
-require(path.join('../lib/commands', argv2 + '.js')).run(function(err) {
+require(path.join('../lib/commands', argv2 + '.js')).run(function(err, txt) {
   if (err)
     jxcore.utils.console.error(err);
+  if (txt)
+    jxcore.utils.console.log(txt);
 });
