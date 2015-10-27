@@ -24,6 +24,14 @@ This command makes the [jxcore-cordova](https://github.com/jxcore/jxcore-cordova
 * unpacked
 * added to the project
 
+You can also install a plugin from a local package by providing its path explicitly:
+
+```bash
+$ jxc install /some/path/io.jxcore.node.jx
+```
+
+Type `jxc install --help` form more commands.
+
 # Usage with sample
 
 You may also install the plugin and use a sample from its [sample](https://github.com/jxcore/jxcore-cordova/tree/master/sample) folder:
@@ -71,3 +79,5 @@ Now from your cordova application folder set the path once:
 ```bash
 $ jxc config set cache readonly /some/folder/jxcore-cordova-release
 ```
+
+Type `jxc config --help` form more commands.

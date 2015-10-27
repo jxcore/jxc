@@ -1,0 +1,14 @@
+Usage:
+    jxc [command] [options]
+
+Where command:
+    config                                         - forces installation
+    install                                        - forces download even if there is already cached file present
+    sample                                         - allows to switch the application code
+
+Where options:
+    -- help                                        - displays this help info
+
+You can also check each of the commands for detailed help:
+
+    > jxc install --help
