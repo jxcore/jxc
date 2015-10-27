@@ -1,5 +1,5 @@
 Usage:
-    jxc install [version || path] [options]
+    jxc install [<version> || <path>] [options]
 
 Where options:
     --force                                         - forces installation

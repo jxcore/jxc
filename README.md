@@ -30,7 +30,7 @@ You can also install a plugin from a local package by providing its path explici
 $ jxc install /some/path/io.jxcore.node.jx
 ```
 
-Type `jxc install --help` form more commands.
+Type `jxc install --help` for more commands.
 
 # Usage with sample
 
@@ -48,6 +48,8 @@ Once you have the plugin installed, you may want only to switch the sample:
 ```bash
 $ jxc sample express_perf
 ```
+
+Type `jxc sample --help` for more commands.
 
 # Caching downloaded files
 
@@ -80,4 +82,4 @@ Now from your cordova application folder set the path once:
 $ jxc config set cache readonly /some/folder/jxcore-cordova-release
 ```
 
-Type `jxc config --help` form more commands.
+Type `jxc config --help` for more commands.
