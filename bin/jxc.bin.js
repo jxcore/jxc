@@ -5,6 +5,7 @@
 var jxtools = require('jxtools');
 var fs = require('fs');
 var path = require('path');
+var cp = require('child_process');
 
 if (jxtools.onlyForJXcore())
   return;
@@ -23,9 +24,18 @@ if (files.indexOf(argv2 + '.js') === -1) {
   process.exit(-1);
 }
 
-require(path.join('../lib/commands', argv2 + '.js')).run(function(err, txt) {
-  if (err)
-    jxcore.utils.console.error(err);
-  if (txt)
-    jxcore.utils.console.log(txt);
+cp.exec('cordova info', function (error, stdout, stderr) {
+  if (error) {
+    jxcore.utils.console.error(stderr);
+    return;
+  }
+
+  require(path.join('../lib/commands', argv2 + '.js')).run(function(err, txt) {
+    if (err)
+      jxcore.utils.console.error(err);
+    if (txt)
+      jxcore.utils.console.log(txt);
+  });
 });
+
+
