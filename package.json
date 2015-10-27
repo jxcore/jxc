@@ -24,5 +24,8 @@
   "homepage": "https://github.com/ktrzeciaknubisa/jxc#readme",
   "dependencies": {
     "jxtools": "git+https://github.com/ktrzeciaknubisa/jxtools.git"
-  }
+  },
+  "bundledDependencies": [
+    "jxtools"
+  ]
 }
