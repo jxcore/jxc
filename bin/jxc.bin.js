@@ -6,6 +6,7 @@ var jxtools = require('jxtools');
 var fs = require('fs');
 var path = require('path');
 var cp = require('child_process');
+var common = require('../lib/common.js');
 
 if (jxtools.onlyForJXcore())
   return;
@@ -17,6 +18,12 @@ if (process.argv.length <= 2) {
 }
 
 var argv2 = process.argv[2].replace("--", "");
+
+var parsedArgv = jxcore.utils.argv.parse();
+if (parsedArgv.h || parsedArgv.help) {
+  jxcore.utils.console.log(common.getHelp(argv2));
+  return;
+}
 
 var files = fs.readdirSync(path.join(__dirname,  '../lib/commands'));
 if (files.indexOf(argv2 + '.js') === -1) {
