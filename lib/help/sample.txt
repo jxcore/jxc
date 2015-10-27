@@ -1,0 +1,8 @@
+Usage:
+    jxc sample <path>                               - replaces the www folder with given sample
+
+Examples:
+    jxc sample express_sample                       - switches to the application located under plugin's `sample` folder
+    jxc sample /some/path/express_sample            - switches to the application located at given path
+
+
