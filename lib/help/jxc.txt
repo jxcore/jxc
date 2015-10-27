@@ -7,7 +7,7 @@ Where command:
     sample                                         - allows to switch the application code
 
 Where options:
-    -- help                                        - displays this help info
+    --help                                        - displays this help info
 
 You can also check each of the commands for detailed help:
 
