@@ -1,4 +1,5 @@
 Usage:
+    jxc sample list                                 - displays list of available samples
     jxc sample <path>                               - replaces the www folder with given sample
 
 Examples:

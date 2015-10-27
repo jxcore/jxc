@@ -49,6 +49,12 @@ Once you have the plugin installed, you may want only to switch the sample:
 $ jxc sample express_perf
 ```
 
+The list of available samples:
+
+```bash
+$ jxc sample list
+```
+
 Type `jxc sample --help` for more commands.
 
 # Caching downloaded files
