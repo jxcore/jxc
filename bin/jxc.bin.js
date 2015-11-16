@@ -28,19 +28,30 @@ if (files.indexOf(argv2 + '.js') === -1) {
   process.exit(-1);
 }
 
-cp.exec('cordova info', function (error, stdout, stderr) {
-  if (error) {
-    jxcore.utils.console.error('The `cordova info` test failed:', stderr);
-    jxcore.utils.console.log(stderr);
-    return;
-  }
+var mod = require(path.join('../lib/commands', argv2 + '.js'));
 
-  require(path.join('../lib/commands', argv2 + '.js')).run(function(err, txt) {
+var _run = function() {
+  mod.run(function(err, txt) {
     if (err)
       jxcore.utils.console.error(err);
     if (txt)
       jxcore.utils.console.log(txt);
   });
-});
+};
+
+
+if (mod.dontCheckCordova) {
+  _run();
+} else {
+  cp.exec('cordova info', function (error, stdout, stderr) {
+    if (error) {
+      jxcore.utils.console.error('The `cordova info` test failed:', stderr.toString().trim());
+      jxcore.utils.console.log(stderr.toString().trim());
+      return;
+    }
+
+    _run()
+  });
+}
 
 
