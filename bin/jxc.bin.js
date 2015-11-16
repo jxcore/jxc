@@ -8,9 +8,6 @@ var path = require('path');
 var cp = require('child_process');
 var common = require('../lib/common.js');
 
-if (jxtools.onlyForJXcore())
-  return;
-
 
 if (process.argv.length <= 2) {
   console.log("Too little arguments.");
@@ -33,7 +30,8 @@ if (files.indexOf(argv2 + '.js') === -1) {
 
 cp.exec('cordova info', function (error, stdout, stderr) {
   if (error) {
-    jxcore.utils.console.error(stderr);
+    jxcore.utils.console.error('The `cordova info` test failed:', stderr);
+    jxcore.utils.console.log(stderr);
     return;
   }
 
