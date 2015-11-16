@@ -5,9 +5,12 @@ This is a helper module for installing [jxcore-cordova](https://github.com/jxcor
 # Installation
 
 The best is to install the module globally. This way you may benefit from global `jxc` command.
+If you have [JXcore](https://github.com/jxcore/jxcore) installed, you can also use it here:
 
 ```bash
-$ jx install -g ktrzeciaknubisa/jxc
+$ npm install -g jxc
+# or
+$ jx install -g jxc
 ```
 
 # Usage
@@ -23,6 +26,14 @@ This command makes the [jxcore-cordova](https://github.com/jxcore/jxcore-cordova
 * downloaded
 * unpacked
 * added to the project
+
+By default the latest version of the plugin is used. However you may specify an exact version, e.g.:
+
+```bash
+$ jxc install 0.0.8
+```
+
+For list of other possible versions see http://jxcordova.cloudapp.net.
 
 You can also install a plugin from a local package by providing its path explicitly:
 
