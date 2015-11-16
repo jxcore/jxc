@@ -1,0 +1,12 @@
+Usage:
+    jxc download [<version> || <path>] [options]
+
+Where options:
+    --force                                          - forces download even if there is already io.jxcore.node.jx present
+    --force-download                                 - forces download even if there is already cached file present
+
+Examples:
+    jxc download                                     - downloads the latest version
+    jxc download 0.0.8 --force                       - downloads 0.0.8 even if there is already any version of plugin installed
+    jxc download /some/path/io.jxcore.node.jx        - extracts plugin from specified local package
+
