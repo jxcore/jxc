@@ -1,6 +1,7 @@
 # JXcore-cordova plugin helper
 
 This is a helper module for installing [jxcore-cordova](https://github.com/jxcore/jxcore-cordova) plugin.
+Posix and Windows platforms are supported.
 
 # Installation
 
