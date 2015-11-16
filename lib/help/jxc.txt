@@ -2,8 +2,9 @@ Usage:
     jxc [command] [options]
 
 Where command:
-    config                                         - forces installation
-    install                                        - forces download even if there is already cached file present
+    config                                         - configuration
+    download                                       - downloads jxcore-cordova plugin
+    install                                        - downloads and installs jxcore-cordova plugin
     sample                                         - allows to switch the application code
 
 Where options:

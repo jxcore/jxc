@@ -14,6 +14,31 @@ $ npm install -g jxc
 $ jx install -g jxc
 ```
 
+# Commands
+
+```bash
+$ jxc --help
+Usage:
+    jxc [command] [options]
+
+Where command:
+    config                                         - configuration
+    download                                       - downloads jxcore-cordova plugin
+    install                                        - downloads and installs jxcore-cordova plugin
+    sample                                         - allows to switch the application code
+
+Where options:
+    --help                                        - displays this help info
+```
+
+**All the commands are briefly explained below.**
+
+You can also check each of them for detailed help:
+
+```bash
+$ jxc install --help
+```
+
 # Usage
 
 Go into your cordova application folder and type:
@@ -42,8 +67,6 @@ You can also install a plugin from a local package by providing its path explici
 $ jxc install /some/path/io.jxcore.node.jx
 ```
 
-Type `jxc install --help` for more commands.
-
 # Usage with sample
 
 You may also install the plugin and use a sample from its [sample](https://github.com/jxcore/jxcore-cordova/tree/master/sample) folder:
@@ -55,7 +78,7 @@ $ cordova run
 
 # Switch sample
 
-Once you have the plugin installed, you may want only to switch the sample:
+Once you have the plugin installed, you may want to only switch the sample:
 
 ```bash
 $ jxc sample express_perf
@@ -67,11 +90,28 @@ The list of available samples:
 $ jxc sample list
 ```
 
-Type `jxc sample --help` for more commands.
+# Download
 
-# Caching downloaded files
+Downloads (only) the latest version of the plugin, but does not install it into cordova application (thus it may be called from any folder).
+This is useful when you want to add the plugin manually to the project (e.g. for Visual Studio solutions).
 
-## Default caching folder
+```bash
+$ jxc download
+```
+
+By default the latest version of the plugin is used. However you may specify an exact version, e.g.:
+
+```bash
+$ jxc install 0.0.8
+```
+
+For list of other possible versions see http://jxcordova.cloudapp.net.
+
+# Config
+
+### Caching downloaded files
+
+##### Default caching folder
 
 To prevent multiple downloads of the same jxcore-cordova binary package, you may want to turn on file caching.
 
@@ -85,7 +125,7 @@ Beware, this folder may grow big if you install few versions of jxcore-cordova p
 
 From now on, each `jxc install` will check this folder first, prior to downloading.
 
-## Read-only caching folder
+##### Read-only caching folder
 
 Another way of preventing downloads is to use [jxcore-cordova-release](https://github.com/jxcore/jxcore-cordova-release) local repository. Just clone it:
 
@@ -100,4 +140,3 @@ Now from your cordova application folder set the path once:
 $ jxc config set cache readonly /some/folder/jxcore-cordova-release
 ```
 
-Type `jxc config --help` for more commands.
