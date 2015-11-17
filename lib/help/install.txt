@@ -1,5 +1,5 @@
 Usage:
-    jxc install [<version> || <path>] [options]
+    jxc install [<version> || <path>] [options]     - installs jxcore-cordova plugin to the cordova project
 
 Where options:
     --force                                         - forces installation

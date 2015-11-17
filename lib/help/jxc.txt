@@ -5,6 +5,7 @@ Where command:
     config                                         - configuration
     download                                       - downloads jxcore-cordova plugin
     install                                        - downloads and installs jxcore-cordova plugin
+    update                                         - updates jxcore-cordova plugin in cordova project
     sample                                         - allows to switch the application code
 
 Where options:

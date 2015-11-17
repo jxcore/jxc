@@ -1,5 +1,5 @@
 Usage:
-    jxc download [<version> || <path>] [options]
+    jxc download [<version> || <path>] [options]     - downloads the latest version of the plugin, without adding it to the application
 
 Where options:
     --force                                          - forces download even if there is already io.jxcore.node.jx present
