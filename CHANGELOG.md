@@ -1,3 +1,6 @@
+# 1.0.6
+
+* added `jxc update` command
 
 # 1.0.4
 

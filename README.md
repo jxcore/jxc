@@ -25,6 +25,7 @@ Where command:
     config                                         - configuration
     download                                       - downloads jxcore-cordova plugin
     install                                        - downloads and installs jxcore-cordova plugin
+    update                                         - updates jxcore-cordova plugin in cordova project
     sample                                         - allows to switch the application code
 
 Where options:
@@ -106,6 +107,19 @@ $ jxc install 0.0.8
 ```
 
 For list of other possible versions see http://jxcordova.cloudapp.net.
+
+# Update
+
+Updates the jxcore-cordova plugin for cordova application. It works pretty much like `install` with `--force` option added:
+
+```bash
+$ jxc update
+```
+or
+
+```bash
+$ jxc install --force
+```
 
 # Config
 

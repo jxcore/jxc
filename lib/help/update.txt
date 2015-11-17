@@ -1,0 +1,11 @@
+Usage:
+    jxc update [options]                            - updates jxcore-cordova plugin in cordova project
+
+Where options:
+    --force-download                                - forces reinstallation of the plugin
+
+Examples:
+    jxc update                                      - checks for latest plugin version and installs if available
+    jxc update --force-download                     - forces reinstallation of the plugin with the latest version available
+
+
