@@ -1,6 +1,6 @@
 Usage:
-    jxc config                                      - displays config
-    jxc config set key [options] [value]            - sets value for a key
+    jxc config                                      : displays config
+    jxc config set key [options] [value]            : sets value for a key
 
 Where key:
     cache
@@ -9,7 +9,7 @@ Where options:
     readonly
 
 Examples:
-    jxc config                                      - displays config
-    jxc config set cache                            - enables cache for downloaded files
+    jxc config                                      : displays config
+    jxc config set cache                            : enables cache for downloaded files
                                                       by default in ~/.jxc/ directory
-    jxc config set cache readonly /my/own/path      - sets readonly cache at user's location
+    jxc config set cache readonly /my/own/path      : sets readonly cache at user's location

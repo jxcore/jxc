@@ -1,12 +1,13 @@
 Usage:
-    jxc install [<version> || <path>] [options]     - installs jxcore-cordova plugin to the cordova project
+    jxc install [<version> || <path>] [options]     : installs jxcore-cordova plugin to the cordova project
 
 Where options:
-    --force                                         - forces installation
-    --force-download                                - forces download even if there is already cached file present
+    --force                                         : forces installation
+    --force-download                                : forces download even if there is already cached file present
 
 Examples:
-    jxc install                                     - installs the latest version
-    jxc install 0.0.8 --force                       - installs 0.0.8 even if there is already any version of plugin installed
-    jxc install /some/path/io.jxcore.node.jx        - installs plugin from specified local package
+    jxc install                                     : installs the latest version
+    jxc install 0.0.8 --force                       : installs 0.0.8 even if there is already any version of plugin installed
+    jxc install /some/path/io.jxcore.node.jx        : installs plugin from specified local package
+    jxc install /some/path/                         : installs plugin from specified local folder (already extracted io.jxcore.node.jx contents)
 

@@ -18,18 +18,20 @@ $ jx install -g jxc
 
 ```bash
 $ jxc --help
+JXcore-cordova helper tool
+
 Usage:
-    jxc [command] [options]
+    jxc <command> [options]
 
 Where command:
-    config                                         - configuration
-    download                                       - downloads jxcore-cordova plugin
-    install                                        - downloads and installs jxcore-cordova plugin
-    update                                         - updates jxcore-cordova plugin in cordova project
-    sample                                         - allows to switch the application code
+    config        : configuration
+    download      : downloads jxcore-cordova plugin
+    install       : downloads and installs jxcore-cordova plugin
+    update        : updates jxcore-cordova plugin in cordova project
+    sample        : allows to switch the application code
 
 Where options:
-    --help                                        - displays this help info
+    --help        : displays this help info
 ```
 
 **All the commands are briefly explained below.**
