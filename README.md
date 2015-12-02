@@ -62,7 +62,7 @@ By default the latest version of the plugin is used. However you may specify an 
 $ jxc install 0.0.8
 ```
 
-For list of other possible versions see http://jxcordova.cloudapp.net.
+For list of other possible versions see http://az836273.vo.msecnd.net.
 
 You can also install a plugin from a local package by providing its path explicitly:
 
@@ -108,7 +108,7 @@ By default the latest version of the plugin is used. However you may specify an 
 $ jxc install 0.0.8
 ```
 
-For list of other possible versions see http://jxcordova.cloudapp.net.
+For list of other possible versions see http://az836273.vo.msecnd.net.
 
 # Update
 
