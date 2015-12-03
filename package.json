@@ -6,7 +6,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ktrzeciaknubisa/jxc.git"
+    "url": "git+https://github.com/jxcore/jxc.git"
   },
   "keywords": [
     "jxcore",
@@ -16,13 +16,13 @@
   "bin": {
     "jxc": "bin/jxc.bin.js"
   },
-  "author": "Krzysztof Trzeciak, Nubisa Inc.",
+  "author": "Krzysztof Trzeciak, Nubisa Inc., JXcore Team",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ktrzeciaknubisa/jxc/issues"
+    "url": "https://github.com/jxcore/jxc/issues"
   },
-  "homepage": "https://github.com/ktrzeciaknubisa/jxc#readme",
+  "homepage": "https://github.com/jxcore/jxc#readme",
   "dependencies": {
-    "jxtools": "git+https://github.com/ktrzeciaknubisa/jxtools.git"
+    "jxtools": "git+https://github.com/jxcore/jxtools.git"
   }
 }
