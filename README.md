@@ -1,12 +1,9 @@
-# JXcore-cordova plugin helper
+## JXcore-cordova plugin helper
 
-This is a helper module for installing [jxcore-cordova](https://github.com/jxcore/jxcore-cordova) plugin.
-Posix and Windows platforms are supported.
+Helper module for installing [jxcore-cordova](https://github.com/jxcore/jxcore-cordova) plugin easily.
+Both Posix and Windows platforms are supported.
 
-# Installation
-
-The best is to install the module globally. This way you may benefit from global `jxc` command.
-If you have [JXcore](https://github.com/jxcore/jxcore) installed, you can also use it here:
+### Installation
 
 ```bash
 $ npm install -g jxc
@@ -14,7 +11,7 @@ $ npm install -g jxc
 $ jx install -g jxc
 ```
 
-# Commands
+### Commands
 
 ```bash
 $ jxc --help
@@ -34,17 +31,9 @@ Where options:
     --help        : displays this help info
 ```
 
-**All the commands are briefly explained below.**
+### Usage
 
-You can also check each of them for detailed help:
-
-```bash
-$ jxc install --help
-```
-
-# Usage
-
-Go into your cordova application folder and type:
+Browse into the cordova application folder and type:
 
 ```bash
 $ jxc install
@@ -62,40 +51,44 @@ By default the latest version of the plugin is used. However you may specify an 
 $ jxc install 0.0.8
 ```
 
-For list of other possible versions see http://az836273.vo.msecnd.net.
+The list of other possible versions are available under http://az836273.vo.msecnd.net.
 
-You can also install a plugin from a local package by providing its path explicitly:
+You can also install the plugin from a local package by providing its path explicitly:
 
 ```bash
 $ jxc install /some/path/io.jxcore.node.jx
 ```
 
-# Usage with sample
+### Usage with sample
 
-You may also install the plugin and use a sample from its [sample](https://github.com/jxcore/jxcore-cordova/tree/master/sample) folder:
+You may also install the plugin and use one of our samples from its [sample](https://github.com/jxcore/jxcore-cordova/tree/master/sample) folder:
 
 ```bash
 $ jxc install --sample express_perf
 $ cordova run
 ```
 
-# Switch sample
+### Switch to another sample
 
-Once you have the plugin installed, you may want to only switch the sample:
+Once you have the plugin installed, you may want to enable the sample:
 
 ```bash
 $ jxc sample express_perf
 ```
 
-The list of available samples:
+**Sample project will overwrite the actual `www` folder!**
+
+In order to get the list of available samples:
 
 ```bash
 $ jxc sample list
 ```
 
-# Download
+### Download
 
-Downloads (only) the latest version of the plugin, but does not install it into cordova application (thus it may be called from any folder).
+Downloads (only) the latest version of the plugin, but does not install it into 
+cordova application (thus it may be called from any folder).
+
 This is useful when you want to add the plugin manually to the project (e.g. for Visual Studio solutions).
 
 ```bash
@@ -110,9 +103,10 @@ $ jxc install 0.0.8
 
 For list of other possible versions see http://az836273.vo.msecnd.net.
 
-# Update
+### Update
 
-Updates the jxcore-cordova plugin for cordova application. It works pretty much like `install` with `--force` option added:
+Updates the jxcore-cordova plugin for cordova application. 
+It works pretty much like `install` with `--force` option added:
 
 ```bash
 $ jxc update
@@ -125,7 +119,7 @@ $ jxc install --force
 
 # Config
 
-### Caching downloaded files
+#### Caching downloaded files
 
 ##### Default caching folder
 
@@ -143,14 +137,15 @@ From now on, each `jxc install` will check this folder first, prior to downloadi
 
 ##### Read-only caching folder
 
-Another way of preventing downloads is to use [jxcore-cordova-release](https://github.com/jxcore/jxcore-cordova-release) local repository. Just clone it:
+Another way of preventing downloads is to use [jxcore-cordova-release](https://github.com/jxcore/jxcore-cordova-release) 
+local repository. Just clone it:
 
 ```bash
 $ cd /some/folder
 $ git clone https://github.com/jxcore/jxcore-cordova-release
 ```
 
-Now from your cordova application folder set the path once:
+Now, from the cordova application folder set the path once:
 
 ```bash
 $ jxc config set cache readonly /some/folder/jxcore-cordova-release
