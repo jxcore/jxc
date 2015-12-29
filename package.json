@@ -1,6 +1,6 @@
 {
   "name": "jxc",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "JXcore-cordova plugin helper",
   "main": "index.js",
   "scripts": {},
@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/jxcore/jxc#readme",
   "dependencies": {
-    "jxtools": "git+https://github.com/jxcore/jxtools.git"
+    "jxtools": "git+https://github.com/ktrzeciaknubisa/jxtools.git"
   }
 }
