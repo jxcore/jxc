@@ -5,6 +5,8 @@ Usage:
 Where options:
     --force                                          : forces download even if there is already io.jxcore.node.jx present
     --force-download                                 : forces download even if there is already cached file present
+    --timeout <ms>                                  : defines the timeout for http download operation. Default is 20000
+    --tries <number>                                : defines amount of attempts for http download operation. Default is 3
 
 Examples:
     jxc download                                     : downloads the latest version
