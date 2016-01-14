@@ -1,3 +1,7 @@
+# 1.0.12
+
+* added support for --timeout and --tries
+
 # 1.0.11
 
 * check for JXcore minimum version 0.3.1.0
