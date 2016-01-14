@@ -1,3 +1,8 @@
+# 1.0.13
+
+* support for `jxc` block in `package.json`. [PR](https://github.com/jxcore/jxc/pull/3)
+* fix for `jx install --sample` (jx path resolving)
+
 # 1.0.12
 
 * added support for --timeout and --tries
