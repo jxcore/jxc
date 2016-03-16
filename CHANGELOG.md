@@ -1,3 +1,7 @@
+# 1.0.14
+
+* support for `--use-url` to download from a custom location
+
 # 1.0.13
 
 * support for `jxc` block in `package.json`. [PR](https://github.com/jxcore/jxc/pull/3)
