@@ -1,3 +1,7 @@
+# 1.0.15
+
+* use https://github.com/jxcore/jxcore-cordova-release as primary binary host
+
 # 1.0.14
 
 * support for `--use-url` to download from a custom location

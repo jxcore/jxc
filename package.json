@@ -1,6 +1,6 @@
 {
   "name": "jxc",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "JXcore-cordova plugin helper",
   "main": "index.js",
   "scripts": {},
